@@ -3,10 +3,8 @@ Sqli
 
 ## Challenge
 
-> We now explained the basic steps involved in an SQL injection. In this assignment you will need to combine all the things we explained in the SQL lessons.
-
-> Goal: Can you login as Tom?
-
+> We now explained the basic steps involved in an SQL injection. In this assignment you will need to combine all the things we explained in the SQL lessons.\
+> Goal: Can you login as Tom?\
 > Have fun!
 
 ## Solution
