@@ -38,7 +38,33 @@ password like '%' | Will return true because `%` represents all possible charact
 password like 'a%' | Will return true if password starts with _a_
 password like '%x' | Will return true if password ends with _x_
 
+So if we script this iterating through all characters then we will get how the password starts through each iteration.\
 
+The code is here [script](./advanced.py) and it returns:
+	password starts with t 
+	password starts with th 
+	password starts with thi 
+	password starts with this 
+	password starts with thisi 
+	password starts with thisis 
+	password starts with thisisa 
+	password starts with thisisas 
+	password starts with thisisase 
+	password starts with thisisasec 
+	password starts with thisisasecr 
+	password starts with thisisasecre 
+	password starts with thisisasecret 
+	password starts with thisisasecretf 
+	password starts with thisisasecretfo 
+	password starts with thisisasecretfor 
+	password starts with thisisasecretfort 
+	password starts with thisisasecretforto 
+	password starts with thisisasecretfortom 
+	password starts with thisisasecretfortomo 
+	password starts with thisisasecretfortomon 
+	password starts with thisisasecretfortomonl 
+	password starts with thisisasecretfortomonly 
+	the password is: thisisasecretfortomonly
 
 
 
