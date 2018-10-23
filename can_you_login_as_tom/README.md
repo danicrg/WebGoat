@@ -7,4 +7,5 @@ Sqli
 > Goal: Can you login as Tom?\
 > Have fun!
 
+![Login](../screenshots/login.png)
 ## Solution
