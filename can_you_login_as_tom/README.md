@@ -72,4 +72,4 @@ There are different non-excluding ways:
 * __Hashing the password of the user.__ This would avoid getting the actual password. You can still get the hash the way described and maybe it is in CrackStation.
 * __Escaping Wildcard characters .__ This one is the `%` we used to exploit the database.
 * __General escaping check.__ Where characters like `'` or `"` are escaped among others.
-* __Encoding all input.__ Hexadecimal for example.
+* __Encoding all input.__ Hexadecimal for example. This prevents concatenating sql sentences or operators.
