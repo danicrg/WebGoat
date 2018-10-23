@@ -1,6 +1,6 @@
 # WebGoat Writeups
 
-SEGU Práctica 2
+SEGU Ejercicio 2
 
 Daniel Carlander\
 Andrés Montero\
