@@ -30,7 +30,13 @@ But user daniel does not really exist because when running `daniel`we get:
 	User daniel created, please proceed to login page
 	
 
-We can deduce that in the backend it executes a `select` sentence and when `true`, such as when you `or '1'='1`, it returns the *already exists* message. So if we were to enter `tom' and password='__toms password__` it would return that the user already exists and we would have toms password. We can bruteforce it trying different passwords until it returns that the user already exists, but the **LIKE** operator makes it much easier.
+We can deduce that in the backend it executes a `select` sentence and when `true`, such as when you `or '1'='1`, it returns the *already exists* message. So if we were to enter `tom' and password='toms password` it would return that the user already exists and we would have toms password. We can bruteforce it trying different passwords until it returns that the user already exists, but the **LIKE** operator reduces the complexity. How this works is better portrayed by examples:
+
+Sentence | Return
+-------- | ------
+password like '%' | Will return true because `%` represents all possible characters.
+password like 'a%' | Will return true if password starts with _a_
+password like '%x' | Will return true if password ends with _x_
 
 
 
