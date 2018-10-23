@@ -13,8 +13,19 @@ SQLi
 ## Solution
 We will exploit the register window.
 
-If we try to register username tom it gives us this message.
-![tom_already](../screenshots/tom_already.png)
+If we try to register username `tom` it gives us this message.
+  User tom alreay exists please try to register with a different username.
 
-And if we try tom' and '1'='1 we get
-![tom_true_already](../screenshots/tom_true_already.png)
+And if we try `tom' and '1'='1` we get
+  User tom' and '1'='1 alreay exists please try to register with a different username.
+  
+If we try another username such as `daniel' or '1'='1`:
+  User daniel' or '1'='1 alreay exists please try to register with a different username.
+
+But user daniel does not really exist because when running `daniel`we get:
+  User daniel created, please proceed to login page
+
+
+
+
+
