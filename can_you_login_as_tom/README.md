@@ -65,7 +65,4 @@ The code is here [script](./advanced.py) and it returns:
 	password starts with thisisasecretfortomon 
 	password starts with thisisasecretfortomonl 
 	password starts with thisisasecretfortomonly 
-	the password is: __thisisasecretfortomonly__
-
-
-
+	the password is: thisisasecretfortomonly
