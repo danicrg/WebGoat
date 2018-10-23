@@ -41,6 +41,7 @@ password like '%x' | Will return true if password ends with _x_
 So if we script this iterating through all characters then we will get how the password starts through each iteration.\
 
 The code is here [script](./advanced.py) and it returns:
+
 	password starts with t 
 	password starts with th 
 	password starts with thi 
