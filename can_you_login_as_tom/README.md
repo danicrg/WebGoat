@@ -40,7 +40,7 @@ password like '%x' | Will return true if password ends with _x_
 
 So if we script this iterating through all characters then we will get how the password starts through each iteration.\
 
-The code is here [script](./advanced.py) and it returns:
+The code is [here](./advanced.py) and it returns:
 
 	password starts with t 
 	password starts with th 
@@ -66,3 +66,10 @@ The code is here [script](./advanced.py) and it returns:
 	password starts with thisisasecretfortomonl 
 	password starts with thisisasecretfortomonly 
 	the password is: thisisasecretfortomonly
+
+## How to prevent this attack
+There are different non-excluding ways:
+* __Hashing the password of the user.__ This would avoid getting the actual password. You can still get the hash the way described and maybe it is in CrackStation.
+* __Escaping Wildcard characters .__ This one is the `%` we used to exploit the database.
+* __General escaping check.__ Where characters like `'` or `"` are escaped among others.
+* __Encoding all input.__ Hexadecimal for example.
