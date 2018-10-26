@@ -17,8 +17,9 @@ If we type whatvever comment we like and add the following code to it: `<script>
 
 We can see in the next images the comment we introduced and the comment that the page shows for all users.
 
-![Comment](../screenshots/comment_screenshot.png)
-![Code](../screenshots/comment_html.png) 
+Comment code | Comment shown
+------------ | -------------
+![Code](../screenshots/comment_html.png) | ![Comment](../screenshots/comment_screenshot.png)
 
 When we refresh the page, the script is executed and gives the following output in the browser's console.
 
