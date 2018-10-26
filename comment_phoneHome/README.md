@@ -15,7 +15,7 @@ This DOM-based XSS attack consists of writing a malicious commment which will ex
 
 If we type whatvever comment we like and add the following code to it: `<script> webgoat.customjs.phoneHome() </script>`, the phoneHome function will be called.
 
-We can see in the next images the comment we introduced and the comment that the page shows for all users.
+We can see in the next images the comment we introduced and the comment that the page shows to all users.
 
 Comment code | Comment shown
 ------------ | -------------
