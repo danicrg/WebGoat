@@ -9,4 +9,4 @@ Juan Lluva
 Challenge | Category
 --------- | --------
 [Can you login as tom?](./can_you_login_as_tom) | SQL Injection
-TODO | XSS
+[Lesson 13](./comment_phoneHome) | XSS
