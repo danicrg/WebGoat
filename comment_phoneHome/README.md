@@ -26,4 +26,16 @@ When we refresh the page, the script is executed and gives the following output 
  ![Console](../screenshots/console.png)
 
 ## How to prevent this attack
-There are different non-excluding ways:
+
+You should allways take into account one rule: NEVER trust data that comes from users or any other external source. Any data must be validated or escaped for his output.
+
+We can talk about three ways to prevent XSS attacks:
+
+-data validation: It's the process of ensuring that your application analize the correct type of data and preventing malicious or any other kind of data from doing harm to the site, databse or users. It is usually used to prevent SQL injection attacks but can also be used to prevent XSS attacks.
+
+-data sanitization: The data sanitization focuses on manipulating the data to ensure that it is safe, eliminating any undesirable part and putting them in the correct way. It is a strong way to prevent XSS attacks but must never be used alone. It is usualy used with data validation.
+
+-output escaping: Taking data an application has received and ensuring it's secure before renderingit for the end user. 
+This prevents the browser from misunderstand any special characters.
+
+
