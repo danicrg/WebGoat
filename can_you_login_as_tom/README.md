@@ -29,7 +29,11 @@ If we try another username such as `daniel' or '1'='1`:
 But user daniel does not really exist because when running `daniel`we get:
 
 	User daniel created, please proceed to login page
-	
+
+If we take a look at the request/response:
+
+![request](../screenshots/request_tom.png)
+![response](../screenshots/response_tom.png)
 
 We can deduce that in the backend it executes a *select* sentence and when *true*, such as when you `or '1'='1`, it returns the *already exists* message. So if we were to enter `tom' and password='toms password` it would return that the user already exists and we would have toms password. We can bruteforce it trying different passwords until it returns that the user already exists, but the **LIKE** operator reduces the complexity. How this works is better portrayed by examples:
 
