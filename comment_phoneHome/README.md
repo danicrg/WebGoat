@@ -24,3 +24,6 @@ Comment code | Comment shown
 When we refresh the page, the script is executed and gives the following output in the browser's console.
 
  ![Console](../screenshots/console.png)
+
+## How to prevent this attack
+There are different non-excluding ways:
