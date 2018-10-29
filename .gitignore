@@ -1,0 +1,4 @@
+*.jar
+*.pgp
+entrega*
+.DS_Store
