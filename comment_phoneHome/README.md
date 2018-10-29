@@ -31,11 +31,11 @@ You should allways take into account one rule: NEVER trust data that comes from 
 
 We can talk about three ways to prevent XSS attacks:
 
--data validation: It's the process of ensuring that your application analize the correct type of data and preventing malicious or any other kind of data from doing harm to the site, databse or users. It is usually used to prevent SQL injection attacks but can also be used to prevent XSS attacks.
+* __Data validation.__ It's the process of ensuring that your application analizes the correct type of data and preventing malicious or any other kind of data from doing harm to the site, database or users. It is usually used to prevent SQL injection attacks but can also be used to prevent XSS attacks.
 
--data sanitization: The data sanitization focuses on manipulating the data to ensure that it is safe, eliminating any undesirable part and putting them in the correct way. It is a strong way to prevent XSS attacks but must never be used alone. It is usualy used with data validation.
+* __Data sanitization.__ The data sanitization focuses on manipulating the data to ensure that it is safe, eliminating any undesirable part and putting them in the correct way. It is a strong way to prevent XSS attacks but must never be used alone. It is usually used with data validation.
 
--output escaping: Taking data an application has received and ensuring it's secure before renderingit for the end user. 
-This prevents the browser from misunderstand any special characters.
+* __Output escaping.__ Taking data an application has received and ensuring it's secure before rendering it for the end user. 
+This prevents the browser from misunderstanding any special characters.
 
 
